@@ -1,8 +1,8 @@
 {
-  "Seqware_Sanger_Somatic_Workflow.normalBam": "https://dcc.icgc.org/api/v1/download?fn=/PCAWG/reference_data/data_for_testing/HCC1143_ds/HCC1143_BL.bam",
-  "Seqware_Sanger_Somatic_Workflow.normalBai": "https://dcc.icgc.org/api/v1/download?fn=/PCAWG/reference_data/data_for_testing/HCC1143_ds/HCC1143_BL.bam.bai",
-  "Seqware_Sanger_Somatic_Workflow.tumorBam": "https://dcc.icgc.org/api/v1/download?fn=/PCAWG/reference_data/data_for_testing/HCC1143_ds/HCC1143.bam",
-  "Seqware_Sanger_Somatic_Workflow.tumorBai": "https://dcc.icgc.org/api/v1/download?fn=/PCAWG/reference_data/data_for_testing/HCC1143_ds/HCC1143.bam.bai",
-  "Seqware_Sanger_Somatic_Workflow.refFrom": "https://dcc.icgc.org/api/v1/download?fn=/PCAWG/reference_data/pcawg-sanger/GRCh37d5_CGP_refBundle.tar.gz",
-  "Seqware_Sanger_Somatic_Workflow.bbFrom": "https://dcc.icgc.org/api/v1/download?fn=/PCAWG/reference_data/pcawg-sanger/GRCh37d5_battenberg.tar.gz"
+  "Seqware_Sanger_Somatic_Workflow.normalBam": "/home/natalieperez/testData/normalBam",
+  "Seqware_Sanger_Somatic_Workflow.normalBai": "/home/natalieperez/testData/normalBai",
+  "Seqware_Sanger_Somatic_Workflow.tumorBam": "/home/natalieperez/testData/tumorBam",
+  "Seqware_Sanger_Somatic_Workflow.tumorBai": "/home/natalieperez/testData/tumorBai",
+  "Seqware_Sanger_Somatic_Workflow.refFrom": "/home/natalieperez/testData/refFrom",
+  "Seqware_Sanger_Somatic_Workflow.bbFrom": "/home/natalieperez/testData/bbFrom"
 }
