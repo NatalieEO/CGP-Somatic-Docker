@@ -1,4 +1,4 @@
-task Seqware_Sanger_Somatic_Workflow {
+task Seqware_Sanger_Somatic {
     File tumorBam
     File tumorBai
     File normalBam
@@ -8,6 +8,7 @@ task Seqware_Sanger_Somatic_Workflow {
     String outputDir = "."
 
     command {
+        bash /start.sh
         python /home/seqware/CGP-Somatic-Docker/scripts/run_seqware_workflow.py \
         --tumor ${tumorBam} \
         --normal ${normalBam} \
@@ -32,5 +33,22 @@ task Seqware_Sanger_Somatic_Workflow {
 }
 
 workflow Seqware_Sanger_Somatic_Workflow {
-    call Seqware_Sanger_Somatic_Workflow
+    File tumorBam
+    File tumorBai
+    File normalBam
+    File normalBai
+    File refFrom
+    File bbFrom
+    String outputDir = "."
+
+    call Seqware_Sanger_Somatic {
+        input:
+            tumorBam = tumorBam,
+            tumorBai = tumorBai,
+            normalBam = normalBam,
+            normalBai = normalBai,
+            refFrom = refFrom,
+            bbFrom = bbFrom,
+            outputDir = outputDir
+    }
 }
