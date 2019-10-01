@@ -28,7 +28,7 @@ task Seqware_Sanger_Somatic {
     }
 
     runtime {
-        docker: 'quay.io/pancancer/pcawg-sanger-cgp-workflow:2.0.0-cwl1'
+        docker: 'quay.io/pancancer/pcawg-sanger-cgp-workflow:2.1.0'
     }
 }
 
